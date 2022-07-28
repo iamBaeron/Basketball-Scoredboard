@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+@font-face {
+    font-family: 'SubwayTicker';
+    src: url('fonts/SubwayTicker.woff2') format('woff2'),
+        url('fonts/SubwayTicker.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DSEG7';
+    src: url('fonts/DSEG7Classic-Bold.woff2') format('woff2'),
+        url('fonts/DSEG7Classic-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+h4 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+body {
+    margin: 0;
+    background-color: #131313;
+}
+
+.container {
+    margin: 78px auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    max-width: 600px;
+    background-color: #0e1630;
+}
+
+.team {
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-text {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    color: white;
+}
+
+.score-display {
+    background-color: #0A0C0F;
+    display: flex;
+    width: 235px;
+    height: 120px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3px;
+    overflow: hidden;
+    border: 1.5px solid rgba(53, 57, 59, 1);
+    border-radius: 2px;
+}
+
+.score-text {
+    z-index: 1;
+    font-size: 92px;
+    font-weight: normal;
+    font-family: 'DSEG7';
+    color: #F5DA29;
+}
+
+.off {
+    z-index: 0;
+    position: absolute;
+    color: rgba(245, 218, 41, 0.05);
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 45px;
+    height: 45px;
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn-add {
+    color: rgb(101, 218, 42);
+    background: rgba(100, 211, 45, 0.158);
+    border: 1.5px solid rgba(108, 189, 68, 0.2);
+    border-radius: 2px;
+}
+
+.btn-add:hover {
+    background: rgba(110, 216, 58, 0.2);
+    border: 1.5px solid rgba(108, 189, 68, 0.4);
+}
+
+.btn-reset {
+    color: rgb(219, 17, 20);
+    background: rgba(237, 33, 36, 0.158);
+    border: 1.5px solid rgba(237, 33, 36, 0.2);
+    border-radius: 2px;
+}
+
+.btn-reset:hover {
+    background: rgba(224, 18, 21, 0.2);
+    border: 1.5px solid rgba(237, 33, 36, 0.4);
+}
+
+.add-points {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    gap: 10px;
+}
+
+.reset {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}

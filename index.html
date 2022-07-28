@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"
+</head>
+<body>
+    <div class="container">
+        <div class="team">
+            <h3 class="team-text">HOME</h3>
+            <div class="score-display">
+                <h1 id="scoreHome" class="score-text">0</h1>
+                <h1 class="score-text off">888</h1>
+            </div>
+            <div class="add-points">
+                <h4>Add points</h4>
+                <div class="buttons">
+                    <button type="button" id="addOneHome" class="btn-add" onclick="addOneHome()">+1</button>
+                    <button type="button" id="addTwoHome" class="btn-add" onclick="addTwoHome()">+2</button>
+                    <button type="button" id="addThreeHome" class="btn-add" onclick="addThreeHome()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div class="reset">
+            <h4>Reset</h4>
+            <button type="button" id="reset" class="btn-reset" onclick="resetScore()">R</button>
+        </div>
+        <div class="team">
+            <h3 class="team-text">GUEST</h3>
+            <div class="score-display">
+                <h1 id="scoreGuest" class="score-text">0</h1>
+                <h1 class="score-text off">888</h1>
+            </div>
+            <div class="add-points">
+                <h4>Add points</h4>
+                <div class="buttons">
+                    <button type="button" id="addOneGuest" class="btn-add" onclick="addOneGuest()">+1</button>
+                    <button type="button" id="addTwoGuest" class="btn-add" onclick="addTwoGuest()">+2</button>
+                    <button type="button" id="addThreeGuest" class="btn-add" onclick="addThreeGuest()">+3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
